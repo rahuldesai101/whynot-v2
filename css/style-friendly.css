@@ -1386,6 +1386,7 @@ hero 1
           align-items: center;
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-text-pad {
   background-color: white;
@@ -1557,6 +1558,7 @@ hero 1
     padding: 120px 0;
   }
   .mil-hero-1 .mil-hero-main .mil-hero-text {
+    padding-top: 50px;
     padding-bottom: 0;
   }
   .mil-hero-1 .mil-shapes .mil-s-1 {
@@ -1600,7 +1602,7 @@ hero 1
     height: 100vh;
   }
   .mil-hero-1 .mil-hero-main .mil-hero-text {
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .mil-hero-1 .mil-shapes .mil-s-2 {
     top: -2vw;
@@ -5349,5 +5351,40 @@ footer
 @media (max-width: 500px) {
   .main-logo-img {
     max-width: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mil-hero-1 {
+    padding-top: 60px !important;
+    padding-bottom: 20px !important;
+    min-height: unset !important;
+  }
+  .mil-hero-1 .mil-hero-main {
+    margin-bottom: 0 !important;
+  }
+  .mil-hero-1 .mil-hero-img-frame {
+    margin-bottom: 0 !important;
+  }
+  .mil-hero-1 .mil-hero-main .mil-hero-text {
+    margin-bottom: 12px !important;
+  }
+}
+
+.mil-mobile-only {
+  display: none !important;
+}
+@media (max-width: 500px) {
+  .mil-mobile-only {
+    display: block !important;
+  }
+  .mil-hero-1 .mil-shapes .mil-s-7 {
+    right: 50px;
+    top: 60px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation: levitate-lg 4s ease-in-out infinite;
+    animation-delay: 0.8s;
   }
 }
