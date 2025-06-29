@@ -199,6 +199,13 @@ hero 1
                 height: 30vw;
                 padding-bottom: 0;
             }
+            
+            & .mil-circle-text-frame {
+                top: -70px;
+                right: 10%;
+                width: 140px !important;
+                height: 140px !important;
+            }
         }
     }
 
@@ -229,6 +236,15 @@ hero 1
                 top: -15vw;
                 right: -25vw;
                 width: 50vw;
+            }
+        }
+        
+        & .mil-hero-img-frame {
+            & .mil-circle-text-frame {
+                top: -50px;
+                right: 5%;
+                width: 120px !important;
+                height: 120px !important;
             }
         }
 
@@ -274,6 +290,13 @@ hero 1
             & .mil-hero-img {
                 height: 50vw;
                 padding-bottom: 0;
+            }
+            
+            & .mil-circle-text-frame {
+                top: -30px;
+                right: 2%;
+                width: 100px !important;
+                height: 100px !important;
             }
         }
     }
@@ -1166,6 +1189,72 @@ circle text
     }
 
     @media (max-width: 992px) {
-        display: none;
+        display: block;
+        width: 140px;
+        height: 140px;
+        transform: scale(0.8);
+
+        & .mil-circle-text {
+            font-size: 10px;
+
+            & svg {
+                transform: scale(1.2);
+            }
+
+            & .mil-arrow {
+                width: 55px;
+                height: 55px;
+
+                & i {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 120px;
+        height: 120px;
+        transform: scale(0.7);
+
+        & .mil-circle-text {
+            font-size: 9px;
+
+            & svg {
+                transform: scale(1.1);
+            }
+
+            & .mil-arrow {
+                width: 50px;
+                height: 50px;
+
+                & i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        width: 100px;
+        height: 100px;
+        transform: scale(0.6);
+
+        & .mil-circle-text {
+            font-size: 8px;
+
+            & svg {
+                transform: scale(1);
+            }
+
+            & .mil-arrow {
+                width: 45px;
+                height: 45px;
+
+                & i {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
