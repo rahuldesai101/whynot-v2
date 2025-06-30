@@ -3385,7 +3385,7 @@ menu window
   color: #353639;
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -50px;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
