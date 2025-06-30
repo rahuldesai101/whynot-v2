@@ -1453,7 +1453,7 @@ hero 1
 }
 .mil-hero-1 .mil-shapes .mil-s-1 {
   bottom: -7vw;
-  left: -25vw;
+  left: -21vw;
   width: 40vw;
   -webkit-animation: levitate-lg 4s ease-in-out infinite;
           animation: levitate-lg 4s ease-in-out infinite;
@@ -2611,8 +2611,8 @@ top panel
           align-items: center;
 }
 .mil-top-panel .mil-logo {
-  width: 100px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5288,19 +5288,19 @@ footer
 .iso-logo-hero {
   display: block;
   margin: 0 auto 15px auto;
-  max-width: 90px;
+  max-width: 70px;
   width: 100%;
   height: auto;
 }
 @media (max-width: 992px) {
   .iso-logo-hero {
-    max-width: 70px;
+    max-width: 60px;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 768px) {
   .iso-logo-hero {
-    max-width: 60px;
+    max-width: 50px;
     margin-bottom: 8px;
   }
 }
