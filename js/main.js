@@ -1110,3 +1110,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+//team slider new
+var swiper = new Swiper('.mil-team-slider', {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    spaceBetween: 30,
+    speed: 800,
+    allowTouchMove: false, // disables drag on desktop & mobile
+    loop: false,           // optional: true if you want endless loop
+    navigation: {
+      nextEl: '.mil-sb-next',
+      prevEl: '.mil-sb-prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        allowTouchMove: true  // enable touch only on small screens
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        allowTouchMove: true
+      },
+      992: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        allowTouchMove: false
+      },
+      1200: {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        allowTouchMove: false
+      }
+    },
+    on: {
+      slideChangeTransitionEnd: function () {
+        ScrollTrigger.refresh();
+      }
+    }
+  });

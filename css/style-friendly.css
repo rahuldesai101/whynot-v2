@@ -3414,8 +3414,8 @@ menu window
 }
 .mil-sb-nav .mil-slider-btn {
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 48px;
+  height: 48px;
   background-color: #FEAF62;
   border-radius: 50%;
   display: -webkit-box;
@@ -3431,12 +3431,27 @@ menu window
   color: #353639;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  font-size: 2rem;
 }
 .mil-sb-nav .mil-slider-btn:last-child {
   margin-right: 0;
 }
 .mil-sb-nav .mil-slider-btn.swiper-button-disabled {
   background-color: #D8D8D8;
+}
+@media (max-width: 992px) {
+  .mil-sb-nav .mil-slider-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .mil-sb-nav .mil-slider-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
 }
 
 /* -------------------------------------------
@@ -5386,5 +5401,21 @@ footer
     position: absolute;
     animation: levitate-lg 4s ease-in-out infinite;
     animation-delay: 0.8s;
+  }
+}
+
+.mil-team-nav-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .mil-team-nav-wrap {
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
