@@ -12,6 +12,9 @@ p.s. I am available for Freelance hire (UI design, web development). email: mill
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
     document.querySelector('.mil-main-menu')?.classList.add('mil-onepage-nav');
+    document.querySelectorAll('footer a[href^="#"]').forEach(link => {
+        link.classList.add('mil-scroll-to');
+      });
     /* -------------------------------------------
 
     swup
