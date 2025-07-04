@@ -1389,7 +1389,7 @@ hero 1
   padding-top: 10px;
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-text-pad {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   width: 40vw;
   height: 40vw;
   position: absolute;
@@ -1412,7 +1412,8 @@ hero 1
   position: absolute;
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-4 img, .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-5 img {
-  width: 100%;
+  width: 40%;
+  transform: rotate(10deg);
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-4 {
   top: -35%;
@@ -1425,7 +1426,9 @@ hero 1
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-4 img {
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(20deg);
+  height: 130px;
+  width: auto;
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-5 {
   bottom: 30%;
@@ -5417,5 +5420,55 @@ footer
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+
+/* Contact Info Section Custom Styles */
+.contact-info-row {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.contact-info-col {
+  background: #ffffff00;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  padding: 36px 32px 32px 32px;
+  min-width: 270px;
+  max-width: 420px;
+  width: 100%;
+  margin: 0 0;
+  position: relative;
+}
+.contact-info-col:first-child {
+  border-right: 1.5px solid #e0e0e0;
+}
+@media (max-width: 991px) {
+  .contact-info-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .contact-info-col:first-child {
+    border-right: none;
+    border-bottom: 1.5px solid #e0e0e0;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .contact-info-row {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    gap: 20px;
+  }
+  .contact-info-col {
+    padding: 22px 10px 18px 10px;
+    min-width: unset;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
   }
 }
