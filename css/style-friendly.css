@@ -184,6 +184,7 @@ settings
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          align-content: center;
 }
 
 .mil-aie {
@@ -5470,5 +5471,168 @@ footer
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  }
+}
+
+/* Corporate Contact Section Styles */
+.contact-corp-row {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0 0 32px 0;
+}
+.container {
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.contact-corp-col {
+  flex: 1;
+  min-width: 0;
+  padding: 0 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.contact-corp-divider {
+  width: 1px !important;
+  background: #787878 !important;
+  margin: 0 !important;
+  align-self: stretch !important;
+  min-height: 100px;
+  display: block !important;
+}
+.contact-corp-col h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.2em;
+  font-weight: 300;
+  color: #353639;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+.contact-corp-col p {
+  font-family: 'Outfit', sans-serif;
+  color: #353639;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: left;
+  line-height: 1.7;
+}
+.contact-corp-col p:last-child {
+  margin-bottom: 0;
+}
+.contact-corp-col i {
+  color: #00AA44 !important;
+  margin-right: 10px;
+}
+@media (max-width: 1024px) {
+  .contact-corp-row {
+    padding: 0 0 24px 0;
+  }
+  .contact-corp-col {
+    padding: 0 18px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-corp-row {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 0 16px 0;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  .contact-corp-divider {
+    display: none !important;
+  }
+  .contact-corp-col {
+    padding: 0 20px !important;
+    margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contact-corp-col:last-child {
+    margin-bottom: 0;
+  }
+  .contact-corp-col h2 {
+    font-size: 2em;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .contact-corp-col p,
+  .contact-address-line p {
+    font-size: 1.08em;
+    line-height: 1.85;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 0;
+    word-break: break-word;
+  }
+  .contact-address-line {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .contact-address-line i {
+    font-size: 1.15em;
+    margin-right: 10px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    align-self: flex-start;
+  }
+  .contact-address-line p {
+    font-size: 1.08em;
+    line-height: 1.85;
+    margin: 0;
+    text-align: left;
+    word-break: break-word;
+    display: inline-block;
+  }
+}
+
+.contact-address-line {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.contact-address-line i {
+  color: #00AA44 !important;
+  font-size: 1.25em;
+  margin-right: 12px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.contact-address-line span {
+  font-family: 'Outfit', sans-serif;
+  color: #353639;
+  font-size: 1.15em;
+  font-weight: 400;
+  line-height: 1.7;
+  white-space: pre-line;
+  display: block;
+}
+@media (max-width: 768px) {
+  .contact-address-line span {
+    font-size: 1em;
+  }
+  .contact-address-line i {
+    font-size: 1.1em;
+    margin-right: 8px;
   }
 }
