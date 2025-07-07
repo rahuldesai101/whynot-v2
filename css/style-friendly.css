@@ -1413,7 +1413,7 @@ hero 1
   position: absolute;
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-4 img, .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-5 img {
-  width: 40%;
+  width: 50%;
   transform: rotate(10deg);
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-4 {
@@ -1432,7 +1432,7 @@ hero 1
   width: auto;
 }
 .mil-hero-1 .mil-hero-main .mil-hero-text .mil-word-frame .mil-s-5 {
-  bottom: 30%;
+  bottom: 10%;
   right: -16%;
   width: 30%;
   -webkit-animation: levitate-sm 3s ease-in-out infinite;
@@ -2630,7 +2630,7 @@ top panel
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ffffff00;
+  background-color: #ECECEA;
   text-align: center;
   color: #ECECEA;
   -webkit-filter: drop-shadow(0px 0px 4px rgba(53, 54, 57, 0.1));
