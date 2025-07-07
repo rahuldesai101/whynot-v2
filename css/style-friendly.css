@@ -1635,7 +1635,7 @@ hero 1
     padding-bottom: 0;
   }
   .mil-hero-1 .mil-hero-img-frame .mil-circle-text-frame {
-    top: -30px;
+    top: -110px;
     right: 2%;
   }
 }
@@ -5638,3 +5638,4 @@ footer
     margin-right: 8px;
   }
 }
+
