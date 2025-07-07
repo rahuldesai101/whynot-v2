@@ -237,6 +237,46 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    document.querySelectorAll('.mil-menu-arrow').forEach(arrow => {
+        arrow.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            const parent = arrow.closest('.mil-has-children');
+            const isActive = parent.classList.contains('mil-active');
+            document.querySelectorAll('.mil-has-children').forEach(el => {
+                const ul = el.querySelector('ul');
+                el.classList.remove('mil-active');
+                if (ul) ul.style.maxHeight = '0';
+            });
+            if (!isActive) {
+                parent.classList.add('mil-active');
+                const ul = parent.querySelector('ul');
+                if (ul) ul.style.maxHeight = `${ul.scrollHeight}px`;
+            }
+            // Now perform navigation and close menu
+            const link = parent.querySelector('a');
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                const target = document.querySelector(href);
+                if (target) {
+                    const offsetY = window.innerWidth < 992 ? 120 : 160;
+                    gsap.to(window, {
+                        duration: 0.5,
+                        ease: 'sine',
+                        scrollTo: {
+                            y: target,
+                            offsetY: offsetY
+                        }
+                    });
+                }
+            }
+            document.querySelector('.mil-menu-btn').classList.remove('mil-active');
+            document.querySelector('.mil-menu-frame').classList.remove('mil-active');
+            document.querySelector('.mil-buttons-tp-frame').classList.remove('mil-active');
+            document.querySelector('.mil-top-panel-2').classList.remove('mil-menu-open');
+        });
+    });
+
     let lastScrollTop = 0;
 
     window.addEventListener('scroll', () => {

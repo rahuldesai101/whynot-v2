@@ -330,6 +330,21 @@ settings
   .mil-768-wg * {
     padding: 0 15px;
   }
+  @media (max-width: 768px) {
+    br {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .contact-address-line br {
+      display: inline;
+    }
+  }
+  @media (max-width: 992px) {
+    .contact-address-line br {
+      display: inline;
+    }
+  }
   .mil-768-aic {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3369,43 +3384,30 @@ menu window
   padding-left: 5px;
 }
 .mil-main-menu li.mil-has-children:after {
+  display: none;
+}
+.mil-menu-arrow {
   font-family: "Font Awesome 5 Pro";
   font-weight: 100;
-  content: "\f061";
-  font-size: 14px;
   background-color: #D8D8D8;
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #353639;
   position: absolute;
   top: 0;
   right: -50px;
-  -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
-.mil-main-menu li.mil-has-children.mil-active:after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.mil-has-children.mil-active .mil-menu-arrow {
+  transform: rotate(90deg);
   background-color: #ffc10e;
-}
-.mil-main-menu li.mil-has-children.mil-active ul {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-.mil-main-menu li.mil-has-children.mil-active ul li {
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
 }
 
 .mil-sb-nav {
